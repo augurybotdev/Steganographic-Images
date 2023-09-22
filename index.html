@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Page Title</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" >
+        </script>
+    </head>
+    
+    <body>
+        <!-- relevant code -->
+        <div class="div">
+            <div class = "button">
+                <div class="header">
+                    <h2>Hidden Image</h2>
+                </div>
+                <canvas class = "canvas" id="canvas1"></canvas>
+                <input type="file" class="button" id = "1" onchange = "chooseFile1()">
+            </div>
+            <div class = "button">
+                <div class="header">
+                    <h2>Container Image</h2>
+                </div>
+                    <canvas class = "canvas" id="canvas2"></canvas>
+                    <input type="file" class="button" id = "2" onchange = "chooseFile2()">
+                </div>
+                <div class = "button">
+                    <div class="header">
+                        <h2>Extracted Hidden Image</h2>
+                    </div>
+                    <canvas class = "canvas" id="canvas3"></canvas>
+                    <input type="button" class="button" id = "6" onclick = "unhide()" value="unhide">
+                </div>
+            </div>
+            <div class="div">
+                <input type="button" class="makeButton" id = "3" onclick = "performSteganography()" value="Perform Steganography">  
+            </div>
+
+        </div>
+        <div class = "distortedImages">
+            <canvas class="distortedImages" id="canvas4"></canvas>
+            <canvas class="distortedImages" id="canvas5"></canvas>
+            <canvas class="distortedImages" id="canvas6"></canvas>
+        </div>
+	
+<script src="script.js"></script>
+    </body>
+
+
+    </html>
